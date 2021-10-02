@@ -12,9 +12,8 @@ before_script:
  - echo "脚本执行前"
 
 script:
- - npm run dev
  - npm run build
- - echo 'Hello Travis'
+ - echo 'StudyTravis 构建完成'
  - node -v
 
 
