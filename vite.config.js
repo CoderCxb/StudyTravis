@@ -7,4 +7,9 @@ export default defineConfig({
   publicDir: process.env.NODE_ENV = 'production'
   ? '/StudyTravis/'
   : '/',
+  build: {
+    assetsDir: process.env.NODE_ENV = 'production'
+    ? '/StudyTravis/assets/'
+    : '/',
+  }
 })
