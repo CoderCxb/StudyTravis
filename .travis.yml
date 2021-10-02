@@ -10,6 +10,15 @@ before_script:
  - echo "脚本执行前"
 
 script:
- - npm run start
+ - npm run dev
  - echo 'Hello Travis'
  - node -v
+
+
+ deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: false
+  on:
+    branch: main
