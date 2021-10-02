@@ -1,0 +1,15 @@
+language: node_js
+cache:
+ directories:
+  - node_modules
+
+install:
+ - yarn install
+
+before_script:
+ - echo "脚本执行前"
+
+script:
+ - npm run start
+ - echo 'Hello Travis'
+ - node -v
