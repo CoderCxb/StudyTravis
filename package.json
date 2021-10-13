@@ -5,7 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "update": "sh ./scripts/update.sh"
+    "update": "sh ./scripts/update.sh",
+    "test": "sh ./scripts/test.sh"
   },
   "dependencies": {
     "vue": "^3.2.16"
