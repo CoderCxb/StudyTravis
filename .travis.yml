@@ -14,10 +14,14 @@ before_script:
 script:
  - npm run build
  - echo 'StudyTravis 构建完成'
- - node -v
+ - node -v 
+ - npm run test
 
 after_script:
  - npm run update
+
+
+
 
 deploy:
  provider: pages
